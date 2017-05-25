@@ -23,10 +23,40 @@ module.exports = (robot) ->
   # robot.hear /I like pie/i, (res) ->
   #   res.emote "makes a freshly baked pie"
   #
-  # lulz = ['lol', 'rofl', 'lmao']
-  #
-  # robot.respond /lulz/i, (res) ->
-  #   res.send res.random lulz
+  lulz = [
+      '華さん食堂',
+      'ジョイフル',
+      'McDonalds',
+      '焼肉　元',
+      '高山',
+      'ほっともっと',
+      'ワンカルビ',
+      'モスバーガー',
+      'ゆぶき',
+      'ほとめく',
+      'スシロー',
+      'くら寿司',
+      '牛牛',
+      '豚々',
+      '麺道場',
+      'ココス',
+      'ココイチ',
+      '浜勝',
+      '丸亀製麺',
+      '餃子の王将',
+      '庄屋',
+      '烏龍',
+      'ろくのや',
+      'びっくりや',
+      'ルパ',
+      'くくる',
+      'すき家',
+      '吉野家',
+      'リンガーハット'
+    ]
+
+  robot.respond /(腹減った)/i, (msg) ->
+    msg.send msg.random lulz
   #
   # robot.topic (res) ->
   #   res.send "#{res.message.text}? That's a Paddlin'"
