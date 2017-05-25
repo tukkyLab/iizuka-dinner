@@ -33,3 +33,6 @@ module.exports = (robot) ->
 
   robot.hear /(腹減った|おなすい)/i, (msg) ->
     msg.send msg.random dinnerList
+
+  robot.hear /(男は黙って)/i, (msg)->
+    msg.send 'http://cdn.snsimg.carview.co.jp/minkara/userstorage/000/005/604/605/8b1727f421.jpg'
