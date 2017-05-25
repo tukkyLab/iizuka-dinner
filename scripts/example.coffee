@@ -23,7 +23,7 @@ module.exports = (robot) ->
   # robot.hear /I like pie/i, (res) ->
   #   res.emote "makes a freshly baked pie"
   #
-  lulz = [
+  dinnerList = [
       '華さん食堂',
       'ジョイフル',
       'McDonalds',
@@ -55,8 +55,8 @@ module.exports = (robot) ->
       'リンガーハット'
     ]
 
-  robot.respond /(腹減った)/i, (msg) ->
-    msg.send msg.random lulz
+  robot.hear /(腹減った)/i, (msg) ->
+    msg.send msg.random dinnerList
   #
   # robot.topic (res) ->
   #   res.send "#{res.message.text}? That's a Paddlin'"
