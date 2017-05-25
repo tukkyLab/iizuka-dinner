@@ -36,3 +36,6 @@ module.exports = (robot) ->
 
   robot.hear /(男は黙って)/i, (msg)->
     msg.send 'http://cdn.snsimg.carview.co.jp/minkara/userstorage/000/005/604/605/8b1727f421.jpg'
+
+  robot.hear /(www|草)/i, (msg)->
+    msg.send 'http://mihon.1-jp.com/kanji/ka-img-400/52/52-3-grass.jpg'
